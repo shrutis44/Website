@@ -18,6 +18,10 @@ const memberSchema = new mongoose.Schema({
      type: String, 
      required: false 
     }, 
+  instagram: {
+    type: String, 
+    required: false 
+    }, 
   linkedin: { 
     type: String, 
     required: false

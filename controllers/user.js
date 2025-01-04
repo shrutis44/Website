@@ -2,8 +2,8 @@ const Member = require("../models/Member");
 
 exports.addMember = async (req, res) => {
   try {
-    const { profile, name, domain, year,github,linkedin } = req.body;
-    const newMember = new Member({  profile,name, domain,  year,github,linkedin });
+    const { profile, name, domain, year,github, instagram ,linkedin } = req.body;
+    const newMember = new Member({  profile,name, domain,  year,github,instagram,linkedin });
     await newMember.save();
     res.status(201).json({ message: "Member added successfully!", data: newMember });
   } catch (err) {
