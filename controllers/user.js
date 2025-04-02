@@ -1,5 +1,4 @@
 const Member = require("../models/Member");
-
 exports.addMember = async (req, res) => {
   try {
     const { profile, name, domain, year,github, instagram ,linkedin } = req.body;
