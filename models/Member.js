@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 const memberSchema = new mongoose.Schema({
     profile: {
         type: String, 
-        required: true
       },
 
   name: {

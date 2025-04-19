@@ -9,7 +9,10 @@ const eventSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  photos: [{
+  color: {
+    type: String,
+  },
+  profile: [{
     type: String 
 }]
   
