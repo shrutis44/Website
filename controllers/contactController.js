@@ -42,12 +42,6 @@ exports.createContact = async (req, res) => {
             return res.status(400).json({ message: 'Email must end with @akgec.ac.in' });
         }
 
-        const wordCount = message.trim().split(/\s+/).length;
-        if (wordCount <= 5) {
-            return res.status(400).json({ message: 'Message must be more than 5 words.' });
-        }
-
-
         const recaptchaVerificationUrl = `https://www.google.com/recaptcha/api/siteverify`;
         const params = new URLSearchParams();
         params.append('secret', RECAPTCHA_SECRET_KEY);
