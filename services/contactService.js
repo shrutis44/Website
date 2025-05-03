@@ -34,7 +34,7 @@ const sendEmail = async (contactData) => {
             from: process.env.EMAIL_USER,
             to: process.env.RECEIVER_EMAIL, 
             subject: 'New Contact Form Submission',
-            text: `You have a new contact request:\n\nName: ${contactData.Name}\nEmail: ${contactData.email}\nPhone: ${contactData.phone}\nMessage: ${contactData.message}`
+            text: `You have a new contact request:\n\nName: ${contactData.name}\nEmail: ${contactData.email}\nPhone: ${contactData.phone}\nMessage: ${contactData.message}`
         };
 
     
