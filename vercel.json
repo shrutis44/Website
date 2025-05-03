@@ -1,0 +1,28 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "server.js", 
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/server.js"
+      }
+    ],
+    "env": {
+       "RECAPTCHA_SECRET_KEY":"6Ldq7wErAAAAAAO5V1bPwkzx70axo405KyR0pk_A",
+        "EMAIL_USER":"shrutimaurya782@gmail.com",
+        "EMAIL_PASS":"mjwxeztonibhbjxk",
+        "RECEIVER_EMAIL":"recipient-email@example.com",
+
+
+        "CLOUD_NAME":"dtwujmsk0",
+        "API_KEY": "756858723488185",
+        "API_SECRET":"2SSVDHQqEl-Row60cDWD0gJfYBU"
+
+    }
+  }
+  
