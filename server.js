@@ -12,17 +12,10 @@ const rateLimit = require('express-rate-limit');
 
 const app = express();
 
-// const contactRateLimiter = rateLimit({
-//     windowMs: 15 * 60 * 1000,
-//     max: 5, 
-//     message:{ 
-//         success:false,
-//         messagr:'Too many requests from this IP, please try again after 15 minutes.'
-//     }
-// });
-
 connectDB();
-app.use(cors());
+app.use(cors({
+        origin:'https://www.cccakgec.live'
+}));
 
 app.use(express.json());
 app.use('/api/contact',contactRoutes);
